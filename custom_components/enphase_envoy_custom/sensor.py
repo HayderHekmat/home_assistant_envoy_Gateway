@@ -431,8 +431,11 @@ class BatteryEnergyChangeEntity(EnvoyEntity):
                     if (new_state_value > old_state_value):
                         self._state = new_state_value - old_state_value
                     else:
-                        self._state = 0
-
+                    #    self._state = 0                    
+                        if (old_state_value > new_state_value):
+                            self._state = old_state_value - new_state_value
+                        else:
+                            self._state = 0
                 else:
                     if (old_state_value > new_state_value):
                         self._state = old_state_value - new_state_value
