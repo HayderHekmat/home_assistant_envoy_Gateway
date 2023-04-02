@@ -155,7 +155,7 @@ PHASE_SENSORS = (
         state_class=SensorStateClass.TOTAL_INCREASING,
         device_class=SensorDeviceClass.ENERGY,
     ),
-        SensorEntityDescription(
+    SensorEntityDescription(
         key="consumption_l1",
         name="Current Power Consumption L1",
         native_unit_of_measurement=POWER_WATT,
@@ -175,7 +175,7 @@ PHASE_SENSORS = (
         state_class=SensorStateClass.TOTAL_INCREASING,
         device_class=SensorDeviceClass.ENERGY,
     ),
-        SensorEntityDescription(
+    SensorEntityDescription(
         key="consumption_l2",
         name="Current Power Consumption L2",
         native_unit_of_measurement=POWER_WATT,
@@ -195,7 +195,7 @@ PHASE_SENSORS = (
         state_class=SensorStateClass.TOTAL_INCREASING,
         device_class=SensorDeviceClass.ENERGY,
     ),
-        SensorEntityDescription(
+    SensorEntityDescription(
         key="consumption_l3",
         name="Current Power Consumption L3",
         native_unit_of_measurement=POWER_WATT,
